@@ -5,12 +5,12 @@ export default function Home() {
     <div className="hero">
       <div className="card bg-dark text-white border-0">
         <img
-          src="/assets/bg1.jpg"
+          src="https://image.gala.de/22183258/t/zR/v7/w1440/r1.5/-/teaser-gala-xmas-shopping.jpg"
           className="card-img"
           alt="background"
           height="1170px"
         />
-        <div className="card-img-overlay d-flex flex-column justify-content-center">
+        <div className="card-img-overlay d-flex flex-column justify-content-start">
           <div className="container"></div>
           <h5 className="card-title display-2 fw-bolder mb-2 ">
             S H O P P I N G..... TIME{" "}

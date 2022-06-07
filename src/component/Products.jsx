@@ -54,33 +54,33 @@ export default function Products() {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-center mb-5 pb-5">
+        <div className="buttons d-flex justify-content-center m-5 pb-5 fw-bold ">
           <button
-            className="btn btn-outline-dark m-2"
+            className="btn btn-outline-dark me-2 fw-bold fs-4 "
             onClick={() => setFilter(data)}
           >
             ALL
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-dark me-2 fw-bold fs-4 "
             onClick={() => filterProduct("men's clothing")}
           >
             Men's Clothing
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-dark me-2 fw-bold fs-4 "
             onClick={() => filterProduct("women's clothing")}
           >
             Women's Clothing
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-dark me-2 fw-bold fs-4 "
             onClick={() => filterProduct("jewelery")}
           >
             Jewelry
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn btn-outline-dark me-2 fw-bold fs-4 "
             onClick={() => filterProduct("electronics")}
           >
             Electronic
@@ -89,7 +89,7 @@ export default function Products() {
         {filter.map((product) => {
           return (
             <div className="col-md-3 mb-4 ">
-              <div className="card h-100 text-center p-4" key={product.id}>
+              <div className="card h-60 text-center p-4" key={product.id}>
                 <img
                   src={product.image}
                   className="card-img-top"
@@ -97,13 +97,13 @@ export default function Products() {
                   height="500px"
                 />
                 <div className="card-body">
-                  <h5 className="card-title mb-0">
+                  <h3 className="card-title mb-0">
                     {product.title.substring(0, 12)}
-                  </h5>
-                  <p className="card-text lead fw-bold">$ {product.price}</p>
+                  </h3>
+                  <h3 className="card-text lead fw-bold">$ {product.price}</h3>
                   <NavLink
                     to={`/products/${product.id}`}
-                    className="btn btn-outline-dark"
+                    className="btn btn-outline-dark fw-bold fs-3"
                   >
                     Bay Now
                   </NavLink>
@@ -125,7 +125,7 @@ export default function Products() {
           <hr />
         </div>
       </div> */}
-      <div className="row justify-content-center my-5 py-5">
+      <div className="row justify-content-center  bg-danger p-2 text-dark bg-opacity-25">
         {loading ? <Loading /> : <ShowProducts />}
       </div>
     </div>

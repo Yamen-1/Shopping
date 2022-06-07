@@ -8,9 +8,6 @@ function Navbar({ itemsCount }) {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark  py-3 shadow-sm ">
         <div className="container">
-          <NavLink className="navbar-brand fw-bold fs-4" to="/">
-            LA COLLECTION
-          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,7 +23,7 @@ function Navbar({ itemsCount }) {
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item ">
                 <NavLink
-                  className="nav-link active  "
+                  className="nav-link active  fw-bold fs-4 "
                   aria-current="page"
                   to="/"
                 >
@@ -34,31 +31,40 @@ function Navbar({ itemsCount }) {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/products/">
+                <NavLink className="nav-link  fw-bold fs-4" to="/products/">
                   Products
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/about/">
+                <NavLink className="nav-link fw-bold fs-4" to="/about/">
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link " to="/contact">
+                <NavLink className="nav-link fw-bold fs-4" to="/contact">
                   Contact
                 </NavLink>
               </li>
             </ul>
             <div className="buttons">
-              <NavLink to="/login" className="btn btn-outline-light ">
+              <NavLink
+                to="/login"
+                className="btn btn-outline-light fw-bold fs-5"
+              >
                 <i className="fa fa-sign-in me-1"></i>
                 Login
               </NavLink>
-              <NavLink to="/register" className="btn btn-outline-light ms-2">
+              <NavLink
+                to="/register"
+                className="btn btn-outline-light ms-2 fw-bold fs-5"
+              >
                 <i className="fa fa-user-p1us me-1"></i>
                 Register
               </NavLink>
-              <NavLink to="/cart" className="btn btn-outline-light ms-2">
+              <NavLink
+                to="/cart"
+                className="btn btn-outline-light ms-2 fw-bold fs-5"
+              >
                 <i className="fa fa-shopping-cart me-1"></i>
                 Cart ({itemsCount})
               </NavLink>

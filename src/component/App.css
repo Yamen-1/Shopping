@@ -10,7 +10,7 @@
 .cart-items {
   margin: 30px auto;
   width: 80%;
-  background-color: goldenrod;
+  background-color: #f5f5f5;
   border: 2px solid black;
   border-radius: 5px;
 }
@@ -66,4 +66,7 @@
   font-family: Arial, Helvetica, sans-serif;
   border-top: 2px solid black;
   height: 100px;
+}
+.hero {
+  background-image: url(/public/assets/bg1.jpg);
 }

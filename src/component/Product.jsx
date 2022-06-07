@@ -42,7 +42,7 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
   const ShowProduct = () => {
     return (
       <>
-        <div className="card mb-3 max-width: 540px">
+        <div className="card mb-3 max-width: 540px bg-danger p-2 text-dark bg-opacity-25">
           <div className="row g-0">
             <div className="col-md-4">
               <img
@@ -63,12 +63,12 @@ export default function Product({ cardItems, setCardItems, handleAddProduct }) {
                   <small className="text-muted">{product.description}</small>
                 </p>
                 <button
-                  // onClick={addToCard}
                   onClick={() => handleAddProduct(product)}
                   className="btn btn-dark ms-2 px-3 py-2"
                 >
                   Add to Cart
                 </button>
+
                 <NavLink to="/cart" className="btn btn-dark ms-2 px-3 py-2">
                   Go to Cart
                 </NavLink>

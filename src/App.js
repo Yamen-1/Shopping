@@ -10,7 +10,18 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [cardItems, setCardItems] = useState([]);
-  const handleAddProduct = (product) => {
+  const [productLs, setProductls] = useState([]);
+  //...........
+  useEffect(() => {
+    let oldProductls = localStorage.getItem("productLs");
+    let parsedOldProductls = JSON.parse(oldProductls);
+    setProductls(parsedOldProductls);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("productLs", JSON.stringify(productLs));
+  }, [productLs]);
+  const handleAddProduct = (product, id) => {
     const productExist = cardItems.find((item) => item.id === product.id);
     if (productExist) {
       setCardItems(
@@ -20,6 +31,7 @@ function App() {
             : item
         )
       );
+      setProductls([...productLs, id]);
     } else {
       setCardItems([...cardItems, { ...product, quantity: 1 }]);
     }
