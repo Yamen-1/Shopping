@@ -35,4 +35,4 @@ This simple shopping cart prototype shows how React with Typescript, React hooks
 ## Contact
 
 - yamen.alashkar@hotmail.com
-- Project Link: http://localhost:3000/Yamen-1.io/Shopping
+- Project Link: http://localhost:3000/Shopping
