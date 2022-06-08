@@ -8,13 +8,13 @@
 
 ---
 
-This simple shopping cart prototype shows how React with Typescript, React hooks, react Context and Styled Components can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
+This simple shopping cart prototype shows how React with Typescript, React hooks, react and Styled Components can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
 
 ### Features
-
-- Add and remove products from the floating cart using Context Api
-- Filter products by available sizes using Context Api
-- Responsive design
+-fitch Api
+- Add and remove products from the floating cart
+- Filter products by available sizes 
+- Style Bootstrap
 
 - ## Build/Run
 - [React js]
@@ -28,9 +28,7 @@ This simple shopping cart prototype shows how React with Typescript, React hooks
 - /_ Then start the React app _/
 - npm start
 
--/_ To run the tests _/
 
-- npm run test
 
 ## Contact
 
